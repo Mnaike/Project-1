@@ -23,7 +23,7 @@
 * sudo apt install php libapache2-mod-php php-mysql
 ### Check php version
 * php -v
-[php-version](./images/php-version.png)
+![php-version](./images/php-version.png)
 
 ## Creating a virtualhost for the website using apache
 ### Create site diretory 'projectlamp'
@@ -33,7 +33,7 @@
 ### Create a new configuration site for projectlamp 
 * sudo vim /etc/apache2/sites-available/projetclamp.conf
 ### Create a virtualhost for the new site. Add the txt below
-[Virtual Host](./images/apache2-virtual-host.png)
+![Virtual Host](./images/apache2-virtual-host.png)
 ### use the **ls** command to list the files in **sites-available** directory
 * sudo ls /etc/apache2/sites-available
 ### 000-default.conf default-ssl.conf projectlamp.conf
@@ -49,18 +49,18 @@
 * vim /var/www/projectlamp/index.html
 ### Test new website
 * http://publick-Ip-Address:80
-[Website test page](./images/website-test-page.png)
+![Website test page](./images/website-test-page.png)
 
 ## Enable PHP on projectlamp website
 ### change the site order by editing **/etc/apache2/modes-enabled/dir.conf** by making sure index.php comes first in the order
 * sudo vim /etc/apache2/mods-enabled/dir.conf
-[modules-table](./images/module-directory.png)
+![modules-table](./images/module-directory.png)
 ### reload apache to update the changes
 * sudo systemctl relaod apache2
 ### Create an index.php file to replace insdex.html
 * sudo vim /var/www/projectlamp/index.php
 ### Test php-page by refreshing the browser
-[PHP Page](./images/php-page.png)
+![PHP Page](./images/php-page.png)
 ### This page confirms PHP is loaded and working properly
 ### Delete the index.php page so the site can default toindex.html
-### This completes our LAMP STACK project.
+### This completes our LAMP STACK project. PBL
